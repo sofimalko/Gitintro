@@ -19,4 +19,4 @@ let rectangle = {
     getPerimeter: function() {return 2*this.width+2*this.height;}
 };
 console.log(`getArea: ${rectangle.getArea()}`);
-console.log (`getPerimeter: ${rectangle.getPerimeter()}`) //  l4.t2
+console.log (`getPerimeter: ${rectangle.getPerimeter()}`) //  l4.t4
