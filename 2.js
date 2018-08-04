@@ -1,10 +1,12 @@
-let str1 = "London is the capital of Great Britain";
-let a = str1.substring(0,6); 
-console.log(`first word is ${a}`); //  l2.t1
-
+let str1 = "London is the capital of Great Britain !";
+let result;
+let abc = str1.indexOf ("!");
+if (abc >= 0) {result = 'contains !';}
+else {result = 'does not contain !';}
+console.log(result); //  l2.t1
 
 let sln = str1.length
-if (sln.length===0) {
+if (sln.length===0 || !str1.trim()) {
     sln = "string is blank";
 }
 else {
@@ -12,14 +14,14 @@ else {
 }
 console.log (`sln=${sln}`); //  l2.t2
 
-abbrev = function (str1) {
+let abbrev = function (str1) {
     let split = str1.split(" ");
     if (split.length > 1) {
-        return (split[0].charAt(0) + "." + split[1].charAt(0) + ".");
+        return (split[0].charAt(0).toUpperCase() + "." + split[1].charAt(0).toUpperCase() + ".");
     }
     return split[0];
 };
-console.log(abbrev("Sofiya Malko")); //  l2.t3
+console.log(abbrev("sofiya malko")); //  l2.t3
 
 let o = 2;
 let p = 4;
@@ -32,7 +34,7 @@ console.log (`c = ${c}`) //  l2.t4
 let m = 16;
 let d = -18;
 let k = 21;
-if (m>k && m>k)
+if (m>d && m>k)
 {if (d>k)
     {console.log(m + ',' + d + ',' + z);
 }

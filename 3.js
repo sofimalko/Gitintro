@@ -1,5 +1,5 @@
 let cit1 = ["Budapest", "Istanbul", "Lviv"];
-console.log(cit1[2]); //  l3.t1
+console.log(cit1.slice(-1)[0]);//  l3.t1
 
 console.log (cit1.join(" <3 ")); //  l3.t2
 
@@ -19,4 +19,5 @@ let rectangle = {
     getPerimeter: function() {return 2*this.width+2*this.height;}
 };
 console.log(`getArea: ${rectangle.getArea()}`);
-console.log (`getPerimeter: ${rectangle.getPerimeter()}`) //  l4.t2
+console.log (`getPerimeter: ${rectangle.getPerimeter()}`) //  l3.t4
+
