@@ -10,16 +10,12 @@ function multiply(x, y) {
 }
 
 function divide(x, y) {
-    return x / y;
-    
+    if (y === 0) {
+        return 0;
+    } else {
+        return x / y;
+    }
 }
-
-let x=2;
-let y=6;
-let z=8;
-let p=-4;
-let m=12;
-let d=0.3333333333333333;
 
 describe('Calculator', function () {
     
@@ -39,3 +35,8 @@ describe('Calculator', function () {
         });
 });
 
+let x=2;
+let y=6;
+let z=8;
+let p=-4;
+let m=12;
