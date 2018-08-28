@@ -1,3 +1,16 @@
+let student = {
+    "name" : "Sofiya",
+    "surname" : "Malko",
+    "rate" : 8
+}
+console.log(student.name);
+
+let string = JSON.stringify(student);
+console.log(string); 
+
+student["rate"] = 10;
+console.log(student["rate"]);
+
 let randomstring = require("randomstring");
 let a = randomstring.generate({
     length: 21,
